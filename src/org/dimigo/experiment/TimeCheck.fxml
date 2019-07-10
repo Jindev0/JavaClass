@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="stopWatch.TimeController"
+              prefWidth="250" prefHeight="100" stylesheets="@stopWatch.css">
+	<padding>
+	   <Insets bottom="8.0" left ="8.0" right ="8.0" top ="8.0"/>
+	</padding>
+	<children>
+	      <Button fx:id="newBtn" text="New" prefHeight="30" styleClass="labelStyle2" layoutX="20" layoutY="10" onAction="#newButton"/>
+	  <Button fx:id="pauseBtn" text="Pause" prefHeight="30" styleClass="labelStyle2" layoutX="95" layoutY="10" onAction="#pauseButton"/>
+	  <Button fx:id="reStartBtn" text="Restart" prefHeight="30" styleClass="labelStyle2" layoutX="180" layoutY="10" onAction="#reStartButton"/>
+	  <Label fx:id="timeLabel" text="0.0" layoutX="115" layoutY="60" styleClass="labelStyle"/>
+	</children>
+</AnchorPane>
+
